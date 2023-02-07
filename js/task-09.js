@@ -8,7 +8,7 @@ function getRandomHexColor() {
 
 function changeBackgroundColor() {
   body.style.backgroundColor = getRandomHexColor();
-  number.textContent = getRandomHexColor();
+  number.textContent = body.style.backgroundColor;
 }
 
 button.addEventListener("click", changeBackgroundColor);
